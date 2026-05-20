@@ -1,0 +1,1434 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head><title>YSN Planetary and Global Engagement</title></head><body><div id="portal_row_container"><div class="portal_row grid_container col-12 row-fe8ffe54-804b-4c89-8bd2-27fe205fbcad" data-id="fe8ffe54-804b-4c89-8bd2-27fe205fbcad" data-row="fe8ffe54-804b-4c89-8bd2-27fe205fbcad"><div class="part_rows_container col-1" data-col="1"><div class="part " id="part_a241e769-c707-4e12-8df5-9a36a8ae5767"><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link href="https://fonts.googleapis.com" rel="preconnect" /><link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect" /><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.min.css" rel="stylesheet" /><script type="text/javascript">/*<![CDATA[*/(function(){var s=document.createElement("style");s.textContent='\n:root {\n  --yale-blue: #00356b;\n  --yale-blue-dark: #002347;\n  --yale-blue-light: #1a4d85;\n  --yale-gold: #BD9B60;\n  --yale-gold-light: #d4b87a;\n  --parchment: #faf6ee;\n  --cream: #f5efe2;\n  --ink: #1a1a1a;\n  --ink-soft: #4a4a4a;\n  --rule: #d4cdb8;\n  --capacity: #5C8374;\n  --fingers: #8B5A3C;\n}\n\n* { box-sizing: border-box; }\n\nbody {\n  margin: 0;\n  background: #00356b;\n}\n\n.ysn-map-frame {\n  background: #00356b;\n  padding: 48px 24px;\n}\n\n.ysn-map-wrap {\n  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;\n  color: var(--ink);\n  background: var(--parchment);\n  padding: 32px 28px;\n  max-width: 1280px;\n  margin: 0 auto;\n  border: 1px solid var(--rule);\n}\n\n.ysn-map-wrap *,\n.ysn-map-wrap *::before,\n.ysn-map-wrap *::after { box-sizing: border-box; }\n\n.ysn-map-header {\n  border-bottom: 1px solid var(--rule);\n  padding-bottom: 20px;\n  margin-bottom: 24px;\n  display: flex;\n  justify-content: space-between;\n  align-items: flex-end;\n  gap: 24px;\n  flex-wrap: wrap;\n}\n\n.ysn-map-header h1 {\n  font-family: "EB Garamond", Georgia, serif;\n  font-weight: 500;\n  font-size: 38px;\n  line-height: 1.05;\n  color: var(--yale-blue);\n  margin: 0 0 6px 0;\n  letter-spacing: -0.01em;\n}\n\n.ysn-wordmark {\n  height: 32px;\n  width: auto;\n  display: block;\n  margin-bottom: 18px;\n}\n\n.ysn-map-header .ysn-eyebrow {\n  font-family: "DM Sans", sans-serif;\n  font-size: 11px;\n  letter-spacing: 0.18em;\n  text-transform: uppercase;\n  color: var(--yale-gold);\n  font-weight: 600;\n  margin-bottom: 8px;\n}\n\n.ysn-map-header .ysn-subtitle {\n  font-family: "EB Garamond", Georgia, serif;\n  font-style: italic;\n  font-size: 17px;\n  color: var(--ink-soft);\n  margin: 0;\n  max-width: 520px;\n  line-height: 1.4;\n}\n\n.ysn-stat-pill {\n  font-family: "DM Sans", sans-serif;\n  font-size: 13px;\n  color: var(--ink-soft);\n  background: var(--cream);\n  border: 1px solid var(--rule);\n  padding: 8px 14px;\n  border-radius: 2px;\n  white-space: nowrap;\n}\n\n.ysn-stat-pill b {\n  color: var(--yale-blue);\n  font-weight: 700;\n}\n\n.ysn-map-layout {\n  display: grid;\n  grid-template-columns: 280px 1fr;\n  gap: 24px;\n  align-items: stretch;\n}\n\n.ysn-filters {\n  background: var(--cream);\n  border: 1px solid var(--rule);\n  padding: 22px 20px;\n  font-size: 14px;\n  max-height: 640px;\n  overflow-y: auto;\n}\n\n.ysn-filter-group { margin-bottom: 24px; }\n.ysn-filter-group:last-child { margin-bottom: 0; }\n\n.ysn-filter-label {\n  font-family: "DM Sans", sans-serif;\n  font-weight: 700;\n  font-size: 11px;\n  letter-spacing: 0.16em;\n  text-transform: uppercase;\n  color: var(--yale-blue);\n  margin-bottom: 12px;\n  padding-bottom: 8px;\n  border-bottom: 1px solid var(--rule);\n}\n\n.ysn-check-row {\n  display: flex;\n  align-items: center;\n  padding: 6px 0;\n  cursor: pointer;\n  user-select: none;\n  gap: 10px;\n  line-height: 1.3;\n  font-size: 14px;\n  color: var(--ink);\n}\n\n.ysn-check-row:hover { color: var(--yale-blue); }\n\n.ysn-check-row input[type="checkbox"] {\n  appearance: none;\n  -webkit-appearance: none;\n  width: 14px;\n  height: 14px;\n  border: 1.5px solid var(--yale-blue);\n  background: white;\n  cursor: pointer;\n  flex-shrink: 0;\n  position: relative;\n  border-radius: 1px;\n}\n\n.ysn-check-row input[type="checkbox"]:checked {\n  background: var(--yale-blue);\n}\n\n.ysn-check-row input[type="checkbox"]:checked::after {\n  content: "";\n  position: absolute;\n  left: 3px;\n  top: 0px;\n  width: 4px;\n  height: 8px;\n  border: solid white;\n  border-width: 0 2px 2px 0;\n  transform: rotate(45deg);\n}\n\n.ysn-check-count {\n  margin-left: auto;\n  color: var(--ink-soft);\n  font-size: 12px;\n  font-variant-numeric: tabular-nums;\n}\n\n.ysn-country-search {\n  width: 100%;\n  padding: 8px 10px;\n  border: 1px solid var(--rule);\n  background: white;\n  font-family: "DM Sans", sans-serif;\n  font-size: 13px;\n  margin-bottom: 10px;\n  border-radius: 0;\n  color: var(--ink);\n}\n\n.ysn-country-search:focus {\n  outline: none;\n  border-color: var(--yale-blue);\n}\n\n.ysn-country-list {\n  max-height: 200px;\n  overflow-y: auto;\n  padding-right: 4px;\n}\n\n.ysn-clear-btn {\n  width: 100%;\n  padding: 10px 12px;\n  background: white;\n  border: 1px solid var(--yale-blue);\n  color: var(--yale-blue);\n  font-family: "DM Sans", sans-serif;\n  font-size: 12px;\n  font-weight: 600;\n  letter-spacing: 0.08em;\n  text-transform: uppercase;\n  cursor: pointer;\n  transition: all 0.15s ease;\n  border-radius: 0;\n}\n\n.ysn-clear-btn:hover {\n  background: var(--yale-blue);\n  color: white;\n}\n\n#ysn-map {\n  height: 640px;\n  border: 1px solid var(--rule);\n  background: #e8e4d8;\n  z-index: 0;\n}\n\n/* Custom markers */\n.ysn-pin {\n  width: 28px;\n  height: 28px;\n  border-radius: 50%;\n  border: 2.5px solid white;\n  box-shadow: 0 2px 6px rgba(0,0,0,0.3);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.ysn-pin-inner {\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  background: white;\n}\n\n/* Cluster styling override */\n.marker-cluster-small,\n.marker-cluster-medium,\n.marker-cluster-large {\n  background: rgba(0, 53, 107, 0.25) !important;\n}\n\n.marker-cluster-small div,\n.marker-cluster-medium div,\n.marker-cluster-large div {\n  background: var(--yale-blue) !important;\n  color: var(--cream) !important;\n  font-family: "DM Sans", sans-serif !important;\n  font-weight: 700 !important;\n  border: 2px solid var(--yale-gold) !important;\n}\n\n/* Popup styling */\n.leaflet-popup-content-wrapper {\n  border-radius: 2px !important;\n  padding: 0 !important;\n  background: var(--parchment) !important;\n  border: 1px solid var(--rule) !important;\n  box-shadow: 0 8px 28px rgba(0, 35, 71, 0.18) !important;\n}\n\n.leaflet-popup-content {\n  margin: 0 !important;\n  width: 340px !important;\n  font-family: "DM Sans", sans-serif !important;\n}\n\n.leaflet-popup-tip {\n  background: var(--parchment) !important;\n  border: 1px solid var(--rule) !important;\n}\n\n.leaflet-popup-close-button {\n  color: var(--yale-blue) !important;\n  font-size: 20px !important;\n  font-weight: 400 !important;\n  top: 6px !important;\n  right: 8px !important;\n  width: 24px !important;\n  height: 24px !important;\n  line-height: 22px !important;\n  padding: 0 !important;\n  text-align: center !important;\n}\n.leaflet-popup-close-button:hover {\n  color: var(--yale-blue-dark) !important;\n  background: rgba(0, 53, 107, 0.06) !important;\n  border-radius: 2px !important;\n}\n\n.ysn-popup {\n  font-family: "DM Sans", sans-serif;\n  color: var(--ink);\n}\n\n.ysn-popup-faculty {\n  display: flex;\n  gap: 12px;\n  align-items: center;\n  padding: 16px 18px 14px;\n  background: var(--cream);\n  border-bottom: 1px solid var(--rule);\n}\n\n.ysn-popup-avatar {\n  width: 48px;\n  height: 48px;\n  border-radius: 50%;\n  background: var(--yale-blue);\n  color: var(--cream);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-family: "EB Garamond", serif;\n  font-size: 18px;\n  font-weight: 500;\n  flex-shrink: 0;\n  overflow: hidden;\n  border: 2px solid var(--yale-gold);\n}\n\n.ysn-popup-avatar img {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n  display: block;\n}\n\n.ysn-popup-faculty-meta { min-width: 0; }\n\n.ysn-popup-faculty-name {\n  font-family: "EB Garamond", serif;\n  font-size: 17px;\n  font-weight: 500;\n  color: var(--yale-blue);\n  line-height: 1.15;\n  margin: 0 0 2px 0;\n}\n\n.ysn-popup-faculty-role {\n  font-size: 11px;\n  color: var(--ink-soft);\n  font-style: italic;\n  font-family: "EB Garamond", serif;\n  letter-spacing: 0.01em;\n  line-height: 1.2;\n}\n\n.ysn-popup-body {\n  padding: 14px 18px 16px;\n}\n\n.ysn-popup-title {\n  font-family: "EB Garamond", serif;\n  font-size: 18px;\n  font-weight: 500;\n  color: var(--ink);\n  line-height: 1.25;\n  margin: 0 0 10px 0;\n}\n\n.ysn-popup-badges {\n  display: flex;\n  gap: 6px;\n  margin-bottom: 14px;\n  flex-wrap: wrap;\n}\n\n.ysn-badge {\n  font-size: 10px;\n  font-weight: 600;\n  letter-spacing: 0.08em;\n  text-transform: uppercase;\n  padding: 4px 9px;\n  border: 1px solid;\n  border-radius: 0;\n  white-space: nowrap;\n}\n\n.ysn-badge-research { background: var(--yale-blue); color: white; border-color: var(--yale-blue); }\n.ysn-badge-education { background: var(--yale-gold); color: white; border-color: var(--yale-gold); }\n.ysn-badge-capacity { background: var(--capacity); color: white; border-color: var(--capacity); }\n.ysn-badge-fingers { background: var(--fingers); color: white; border-color: var(--fingers); }\n.ysn-badge-active { background: white; color: var(--yale-blue); border-color: var(--yale-blue); }\n.ysn-badge-archived { background: white; color: var(--ink-soft); border-color: var(--ink-soft); }\n\n.ysn-popup-meta {\n  font-size: 12.5px;\n  line-height: 1.5;\n  color: var(--ink);\n  border-top: 1px solid var(--rule);\n  padding-top: 12px;\n}\n\n.ysn-popup-meta-row { margin-bottom: 6px; }\n.ysn-popup-meta-row:last-child { margin-bottom: 0; }\n\n.ysn-popup-meta-label {\n  font-size: 10px;\n  font-weight: 700;\n  letter-spacing: 0.14em;\n  text-transform: uppercase;\n  color: var(--yale-gold);\n  display: inline-block;\n  width: 76px;\n}\n\n.ysn-popup-themes {\n  margin: 12px 0;\n  display: flex;\n  gap: 4px;\n  flex-wrap: wrap;\n}\n\n.ysn-theme-chip {\n  font-size: 10.5px;\n  background: white;\n  border: 1px solid var(--rule);\n  color: var(--ink);\n  padding: 3px 8px;\n  border-radius: 0;\n  font-style: italic;\n  font-family: "EB Garamond", serif;\n}\n\n.ysn-popup-desc {\n  font-size: 13px;\n  line-height: 1.55;\n  color: var(--ink-soft);\n  margin: 12px 0;\n  font-family: "EB Garamond", serif;\n  max-height: 140px;\n  overflow-y: auto;\n  padding-right: 6px;\n}\n\n.ysn-popup-link {\n  display: inline-block;\n  margin-top: 6px;\n  font-size: 12px;\n  color: var(--yale-blue);\n  text-decoration: none;\n  font-weight: 600;\n  letter-spacing: 0.04em;\n  border-bottom: 1px solid var(--yale-gold);\n  padding-bottom: 2px;\n}\n\n.ysn-popup-link:hover {\n  color: var(--yale-blue-dark);\n  border-bottom-color: var(--yale-blue);\n}\n\n.ysn-popup-link::after {\n  content: " >";\n  font-family: "DM Sans", sans-serif;\n}\n\n/* Legend */\n.ysn-legend {\n  margin-top: 20px;\n  padding-top: 18px;\n  border-top: 1px solid var(--rule);\n  display: flex;\n  gap: 18px;\n  flex-wrap: wrap;\n  font-size: 12px;\n  color: var(--ink-soft);\n}\n\n.ysn-legend-item {\n  display: flex;\n  align-items: center;\n  gap: 7px;\n}\n\n.ysn-legend-dot {\n  width: 12px;\n  height: 12px;\n  border-radius: 50%;\n  border: 1.5px solid white;\n  box-shadow: 0 0 0 1px var(--rule);\n}\n\n/* Responsive */\n@media (max-width: 860px) {\n  .ysn-map-layout {\n    grid-template-columns: 1fr;\n  }\n  .ysn-filters {\n    max-height: none;\n  }\n  #ysn-map {\n    height: 500px;\n  }\n  .ysn-map-header h1 {\n    font-size: 30px;\n  }\n}\n\n@media (max-width: 480px) {\n  .ysn-map-wrap {\n    padding: 20px 16px;\n  }\n  .ysn-map-frame {\n    padding: 24px 12px;\n  }\n  .leaflet-popup-content {\n    width: 280px !important;\n  }\n}\n';document.head.appendChild(s);})();/*]]>*/</script><div class="ysn-map-frame"><div class="ysn-map-wrap"><header class="ysn-map-header"><div><img alt="Yale School of Nursing" class="ysn-wordmark" src="https://apply.nursing.yale.edu/www/images/YSN_Wordmark_RGB_Horizontal.png" style="height: 21px; width: 250px;" /><div class="ysn-eyebrow">
+            Planetary and Global Engagement
+          </div><h1>
+            Global Activities
+          </h1><p class="ysn-subtitle">
+            Research, education, and capacity-building partnerships connecting YSN faculty with collaborators around the world.
+          </p></div><div class="ysn-stat-pill">
+          Showing <b id="ysn-count-visible">52</b> of <b id="ysn-count-total">52</b> activities
+        </div></header><div class="ysn-map-layout"><aside class="ysn-filters"><div class="ysn-filter-group"><div class="ysn-filter-label">
+              Activity Type
+            </div><div id="ysn-filter-type"></div></div><div class="ysn-filter-group"><div class="ysn-filter-label">
+              Status
+            </div><div id="ysn-filter-status"></div></div><div class="ysn-filter-group"><div class="ysn-filter-label">
+              Country / Region
+            </div><input class="ysn-country-search" id="ysn-country-search" placeholder="Search countries..." type="text" autocomplete="off" /><div class="ysn-country-list" id="ysn-filter-country"></div></div><button class="ysn-clear-btn" id="ysn-clear-btn">Reset filters</button></aside><div id="ysn-map"></div></div><div class="ysn-legend"><div class="ysn-legend-item"><span class="ysn-legend-dot" style="background:#00356b"></span> Research
+          </div><div class="ysn-legend-item"><span class="ysn-legend-dot" style="background:#BD9B60"></span> Education
+          </div><div class="ysn-legend-item"><span class="ysn-legend-dot" style="background:#5C8374"></span> Capacity Building
+          </div><div class="ysn-legend-item"><span class="ysn-legend-dot" style="background:#8B5A3C"></span> FINGERS Study
+          </div></div></div></div><script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script><script>/*<![CDATA[*/(function () {
+  // Verify Leaflet loaded; show a visible error if not
+  if (typeof L === "undefined") {
+    var mapDiv = document.getElementById("ysn-map");
+    if (mapDiv) {
+      mapDiv.innerHTML = '\u003Cdiv style="padding:40px;text-align:center;font-family:DM Sans,sans-serif;color:#00356b;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;background:#f5efe2;"\u003E' +
+        '\u003Cdiv style="font-family:EB Garamond,serif;font-size:22px;margin-bottom:10px;"\u003EMap library failed to load\u003C/div\u003E' +
+        '\u003Cdiv style="font-size:13px;color:#4a4a4a;max-width:400px;line-height:1.5;"\u003EThe Leaflet mapping library could not be loaded from cdnjs.cloudflare.com. This may be due to a network restriction or content blocker. Check the browser console for details.\u003C/div\u003E' +
+        '\u003C/div\u003E';
+    }
+    return;
+  }
+
+  var DATA = [
+  {
+    "id": 6,
+    "faculty": "LaRon Nelson",
+    "role": "Professor of Nursing",
+    "initials": "LN",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/laron-e-nelson-phd-rn-fnp-fnap-fnyam-faan",
+    "headshot": null,
+    "activityType": "Research",
+    "activityName": "Evaluate the sustainability of Cancer Patient Navigation Program (PNP) at Kenyatta National Hospital ",
+    "description": "Drs. Nelson, Feder and Cong co-advised Dr. Jinfeng Ding on evaluating the sustainability of Cancer Patient Navigation Program (PNP) at Kenyatta National Hospital. Dr. Ding is a lecturer and research fellow at Xiangya School of Nursing, Central South University, China. He is a registered nurse and received the China Medical Board Global Health Leadership Development fellowship. ",
+    "themes": [
+      "Chronic Illness and Symptom Management"
+    ],
+    "partner": "Kenyatta National Hospital",
+    "country": "Kenya",
+    "city": "Nairobi",
+    "lat": 1.28,
+    "lng": 36.82,
+    "startDate": "Oct 2022",
+    "endDate": "Sep 2023",
+    "status": "Archived"
+  },
+  {
+    "id": 7,
+    "faculty": "LaRon Nelson",
+    "role": "Professor of Nursing",
+    "initials": "LN",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/laron-e-nelson-phd-rn-fnp-fnap-fnyam-faan",
+    "headshot": "https://jackson.yale.edu/wp-content/uploads/2026/01/LaRon-Nelson-1768451465.jpg",
+    "activityType": "Research",
+    "activityName": "Job Satisfaction and Perceptions of Female Academics: A Mixed-Methods Study.",
+    "description": "Prof. LaRon Nelson mentored Dr. Shefaly Shorey. Dr. Shefaly Shorey, as an Associate Professor at the National University of Singapore, received a Fullbright-sponsored study investigating female academics’ job satisfaction and perceptions across Science, Technology, Engineering, and Mathematics (STEM) disciplines at well-renowned academic institutes/universities. The specific research questions are:\na. What is the job satisfaction of female academics from STEM disciplines?\nb. What are the experiences and needs of female academics from STEM disciplines?\nDr. LaRon Nelson is the Independence Foundation Professor of Nursing and Associate Dean of Global Affairs and Planetary Health.",
+    "themes": [
+      "Healthcare Workforce"
+    ],
+    "partner": "Alice Lee Centre for Nursing Studies, National University of Singapore (NUS)",
+    "country": "Singapore",
+    "city": "Singapore ",
+    "lat": 1.3521,
+    "lng": 103.8198,
+    "startDate": "May 2023",
+    "endDate": "Jun 2023",
+    "status": "Active"
+  },
+  {
+    "id": 8,
+    "faculty": "Zhao Ni",
+    "role": "Assistant Professor",
+    "initials": "ZN",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/zhao-ni-phd-bmed-rn-faan-faha",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/ysn622_0516_z_ni_0.jpg?itok=r-7wKGBm&c=fdbdd398305e23164eeaed266680e36f",
+    "activityType": "Research",
+    "activityName": "The development of a clinical algorithm for the management of community acquired pneumonia in a high HIV burden setting using Implementation Science methodology",
+    "description": "Dr. Phoebe Juma (from Kenyatta National Hospital and receipient of global health equity fellowship.) collaborate on a project which aims to develop, test, and implement a clinical algorithm for the management of community acquired pneumonia in a high HIV burden setting in Kenya.  Dr. Juma was mentored by Dr. Zhao Ni. Dr. Ni is a faculty lead of the Yale Office of Global Affairs & Planetary Health and serves as the Director of International Academic Partnerships and Programs.",
+    "themes": [
+      "Behavioral and Translational Research"
+    ],
+    "partner": "Kenyatta National Hospital",
+    "country": "Kenya",
+    "city": "Nairobi",
+    "lat": -1.2864,
+    "lng": 36.8172,
+    "startDate": "Mar 2023",
+    "endDate": "May 2023",
+    "status": "Active"
+  },
+  {
+    "id": 9,
+    "faculty": "Ami Marshall",
+    "role": "Director for Adult/Gerontology Primary Care Nurse Practitioner (AGPCNP)",
+    "initials": "AM",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/ami-marshall-edd-msn-aprn-anp-c",
+    "headshot": "https://ctprimarycareandwellness.com/wp-content/uploads/2023/03/Ami-Marshall-Pic-1600x2400.jpg",
+    "activityType": "Education",
+    "activityName": "Global field immersion experience - Global Health Track",
+    "description": "The international partnerships developed by the Office of Global Affairs and Planetary Health (OGAPH) offer YSN students a unique opportunity to expand their intercultural understanding, deepen their knowledge of community health, and gain practical clinical or cultural experience in a diverse environment, thus, contributing to students’ success as culturally knowledgeable nurse practitioners and nurse researchers. Faculty leader Ami Marshall is developing this field experience in partnership with the Cape Verdean Nurses Association (CVNA). Senior Lecturer in Nursing Specialty Director for Adult/Gerontology Primary Care Nurse Practitioner (AGPCNP) Program.OGAPH continues to identify, develop, and foster new bi-directional partnerships for all levels of nursing students and researchers. ",
+    "themes": [
+      "Healthy Aging and Precision Wellness"
+    ],
+    "partner": "Cape Verdean Nurses Association",
+    "country": "Cape Verde",
+    "city": "Praia",
+    "lat": 14.9331,
+    "lng": -23.5133,
+    "startDate": "Jul 2023",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 10,
+    "faculty": "Linda Ghamson ",
+    "role": "Director of the Simulation Unit",
+    "initials": "LG",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/linda-ghampson-dnp-msn-rn-chse",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/linda-ghampson_jmf-24-002_yale_nurse_0193.jpg?itok=_6_5513u&c=8dffbebe55ba2faf28e96a016599e0fe",
+    "activityType": "Education",
+    "activityName": "Global field immersion experience - Global Health Track",
+    "description": "The international partnerships developed by the Office of Global Affairs and Planetary Health (OGAPH) offer YSN students a unique opportunity to expand their intercultural understanding, deepen their knowledge of community health, and gain practical clinical or cultural experience in a diverse environment, thus, contributing to students’ success as culturally knowledgeable nurse practitioners and nurse researchers. Faculty leader Linda Ghampson is developing this field experience in partnership with Accra School of Hygiene. OGAPH continues to identify, develop, and foster new bi-directional partnerships for all levels of nursing students and researchers.",
+    "themes": [
+      "Behavioral and Translational Research"
+    ],
+    "partner": "Accra School of Hygiene",
+    "country": "Ghana",
+    "city": "Accra",
+    "lat": 5.6037,
+    "lng": -0.187,
+    "startDate": "Jun 2023",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 11,
+    "faculty": "Sandy Cayo",
+    "role": "Assistant Professor, Director of GEPN",
+    "initials": "SC",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/sandy-cayo-dnp-fnp-bc-faan",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/ysn_sandy-cayo_web.jpg?itok=lqU1zPFE&c=f038212933c8d3ae446acabc1ec1e03a",
+    "activityType": "Education",
+    "activityName": "Global field immersion experience - Global Health Track",
+    "description": "The international partnerships developed by the Office of Global Affairs and Planetary Health (OGAPH) offer YSN students a unique opportunity to expand their intercultural understanding, deepen their knowledge of community health, and gain practical clinical or cultural experience in a diverse environment, thus, contributing to students’ success as culturally knowledgeable nurse practitioners and nurse researchers. Faculty leader Dr. Sandy Cayo is developing this field experience in partnership with the School of Nursing at Kwame Nkrumah University of Science and Technology. Dr. Cayo is an Assistant Professor in Nursing. OGAPH continues to identify, develop, and foster new bi-directional partnerships for all levels of nursing students and researchers.",
+    "themes": [
+      "Healthcare Workforce"
+    ],
+    "partner": "Kwame Nkrumah University of Science and Technology",
+    "country": "Ghana",
+    "city": "Kumasi",
+    "lat": 6.6885,
+    "lng": -1.6244,
+    "startDate": "Jun 2023",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 12,
+    "faculty": "Zhao Ni",
+    "role": "Assistant Professor",
+    "initials": "ZN",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/zhao-ni-phd-bmed-rn-faan-faha",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/ysn622_0516_z_ni_0.jpg?itok=r-7wKGBm&c=fdbdd398305e23164eeaed266680e36f",
+    "activityType": "Education",
+    "activityName": "Global field immersion experience - Global Health Track",
+    "description": "The international partnerships developed by the Office of Global Affairs and Planetary Health (OGAPH) offer YSN students a unique opportunity to expand their intercultural understanding, deepen their knowledge of community health, and gain practical clinical or cultural experience in a diverse environment, thus, contributing to students’ success as culturally knowledgeable nurse practitioners and nurse researchers. Faculty leader Dr. Zhao Ni is developing this field experience in partnership with the School of Nursing at Peking University. OGAPH continues to identify, develop, and foster new bi-directional partnerships for all levels of nursing students and researchers. Dr. Ni is an Assistant Professor, faculty lead of the Yale Office of Global Affairs & Planetary Health and serves as the Director of International Academic Partnerships and Programs.",
+    "themes": [
+      "Behavioral and Translational Research"
+    ],
+    "partner": "Peking University",
+    "country": "China",
+    "city": "Beijing",
+    "lat": 39.9042,
+    "lng": 116.4074,
+    "startDate": "Oct 2023",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 13,
+    "faculty": "Zhao Ni",
+    "role": "Assistant Professor",
+    "initials": "ZN",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/zhao-ni-phd-bmed-rn-faan-faha",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/ysn622_0516_z_ni_0.jpg?itok=r-7wKGBm&c=fdbdd398305e23164eeaed266680e36f",
+    "activityType": "Education",
+    "activityName": "Global field immersion experience - Global Health Track",
+    "description": "The international partnerships developed by the Office of Global Affairs and Planetary Health (OGAPH) offer YSN students a unique opportunity to expand their intercultural understanding, deepen their knowledge of community health, and gain practical clinical or cultural experience in a diverse environment, thus, contributing to students’ success as culturally knowledgeable nurse practitioners and nurse researchers. Faculty leader Dr. Zhao Ni is developing this field experience in partnership with the Faculty of Nursing at the University of Airlangga. OGAPH continues to identify, develop, and foster new bi-directional partnerships for all levels of nursing students and researchers. Dr. Ni is an Assistant Professor, faculty lead of the Yale Office of Global Affairs & Planetary Health and serves as the Director of International Academic Partnerships and Programs.",
+    "themes": [
+      "Planetary Health"
+    ],
+    "partner": "University of Airlangga",
+    "country": "Indonesia",
+    "city": "Surabaya",
+    "lat": -7.2575,
+    "lng": 112.7521,
+    "startDate": "Oct 2023",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 14,
+    "faculty": "Jennifer McIntosh",
+    "role": "Director of Clinical Education for the Graduate Entry Prespecialty in Nursing (GEPN) Program",
+    "initials": "JM",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/jennifer-mcintosh-phd-aprn-pmhnp-bc-cne-nea-bc",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/mcintosh_jennifer_-_headshot_6.22.jpg?itok=yWoFQEcp&c=15ea829fe70990fe5c102a827e095471",
+    "activityType": "Education",
+    "activityName": "Global field immersion experience - Global Health Track",
+    "description": "The international partnerships developed by the Office of Global Affairs and Planetary Health (OGAPH) offer YSN students a unique opportunity to expand their intercultural understanding, deepen their knowledge of community health, and gain practical clinical or cultural experience in a diverse environment, thus, contributing to students’ success as culturally knowledgeable nurse practitioners and nurse researchers. Faculty leader Dr.Jennifer McIntosh is developing this field experience in partnership with the University of Tokyo. OGAPH continues to identify, develop, and foster new bi-directional partnerships for all levels of nursing students and researchers. Dr. McIntosh is a Lecturer in Nursing, Graduate Entry Prespecialty in Nursing and Master of Science in Nursing. ",
+    "themes": [
+      "Planetary Health"
+    ],
+    "partner": "University of Tokyo",
+    "country": "Japan",
+    "city": "Tokyo",
+    "lat": 35.6762,
+    "lng": 139.6503,
+    "startDate": "May 2023",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 15,
+    "faculty": "Michelle Telfer",
+    "role": "Associate Professor of Nursing\nand Interim Nurse-Midwifery Specialty Co-Director",
+    "initials": "MT",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/michelle-telfer-dnp-mph-cnm-facnm",
+    "headshot": "https://vidm.org/wp-content/uploads/2020/04/04.Michelle-Telfer_2210_lavitt_R-300x240.jpg",
+    "activityType": "Education",
+    "activityName": "Midwifery model of care in Uganda",
+    "description": "Dr. Telfer leads a 4-6 week long clinical immersion for YSN midwifery students at the birthing center in Atiak, Uganda, as well as support Makerere masters midwifery students. Additionally Dr. Telfer and team collaborate with Yale OB/GYN residents and Makerere Residents to learn the midwifery model of care. Dr. Telfer's Global Midwifery seminar course is designed to provide an introduction to global maternal and newborn health issues including understanding the global burden of disease and morbidity and mortality affecting women and newborns. The seminar aims to develop the student’s capacity to provide full scope midwifery care for birthing people and neonates in low-resource settings in the context of the unique community integrated model of care and the clinical guidelines of an exemplar birth center in Northern Uganda.",
+    "themes": [
+      "Maternal and Child Health"
+    ],
+    "partner": "Makerere University Department of Health Sciences Midwifery, Clarke International University, the MUYU Collaboration and HEPI Fogarty Grant, Mother Health International",
+    "country": "Uganda",
+    "city": " Atiak",
+    "lat": 2.1927,
+    "lng": 32.9644,
+    "startDate": "Jan 2019",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 16,
+    "faculty": "Michelle Telfer",
+    "role": "Associate Professor of Nursing\nand Interim Nurse-Midwifery Specialty Co-Director",
+    "initials": "MT",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/michelle-telfer-dnp-mph-cnm-facnm",
+    "headshot": "https://vidm.org/wp-content/uploads/2020/04/04.Michelle-Telfer_2210_lavitt_R-300x240.jpg",
+    "activityType": "Research",
+    "activityName": "Collaboration and exchanging research and professional experiences with Dr. Qorin Adnani",
+    "description": "Dr. Qorinah Estiningtyas Sakilah Adnani received a highly competitive “Recharge” scholarship from her university that supports faculty to visit, collaborate and work on scholarship. As a visiting scholar at Yale School of Nursing Dr. Adnani with her faculty advisor, Dr. Telfer exchanged research and professional experiences on midwifery in Indonesia and discussed current and possible future collaboration between the collaborators. In addition, Dr. Adnani observed and participated in midwifery courses while on campus. She participated in faculty meetings, programmatic discussions, and curriculum planning. She also received the opportunity to do some clinical or community health observations. ",
+    "themes": [
+      "Behavioral and Translational Research"
+    ],
+    "partner": "Universitas Padjadjaran",
+    "country": "Indonesia",
+    "city": "Bandung, Bandung City, West Java,",
+    "lat": -6.9175,
+    "lng": 107.6191,
+    "startDate": "Oct 2023",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 17,
+    "faculty": "Soohyun Nam",
+    "role": "Gayle King Lee Associate Professor of Nursing",
+    "initials": "SN",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/soohyun-nam-phd-aprn-anp-bc-faha-faan",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/profnam20190816-1.jpg?itok=k-7TpXEn&c=ae999b9c59aad4262a13cbf42966318a",
+    "activityType": "Research",
+    "activityName": "Developing and implementing multi-level, non-communicable disease (NCD) programs in Kenya",
+    "description": "The purpose of the study is to develop and implement community-based health programs to improve hypertension/Type 2 diabetes screening and delivery of care in urban LMIC settings where social determinants of health play a critical role in NCD disparities in Kenya. ",
+    "themes": [
+      "Chronic Illness and Symptom Management"
+    ],
+    "partner": "Help REACH Africa (HERA)  ",
+    "country": "Kenya",
+    "city": "Nairobi",
+    "lat": -1.2864,
+    "lng": 36.8172,
+    "startDate": "Jan 2023",
+    "endDate": "Dec 2024",
+    "status": "Active"
+  },
+  {
+    "id": 18,
+    "faculty": "Sandy Cayo",
+    "role": "Assistant Professor, Director of GEPN Excellence Yale School of Nursing \nDirector of Clinical Initiatives SASH Lab Yale School of Public Health",
+    "initials": "SC",
+    "profile": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/ysn_sandy-cayo_web.jpg?itok=lqU1zPFE&c=f038212933c8d3ae446acabc1ec1e03a",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/ysn_sandy-cayo_web.jpg?itok=lqU1zPFE&c=f038212933c8d3ae446acabc1ec1e03a",
+    "activityType": "Education",
+    "activityName": "Nursing education instruction",
+    "description": "Dr. Sandy Cayo is a board-certified family nurse practitioner. As a practicing clinician, she cares for patients across the care continuum from pediatric to geriatric specializing in primary care and urgent care services. Her other specialties include oncology, school-based health, and women’s health. Dr Cayo is an advocate for global health and travels to Haiti, Nigeria, and Ghana annually to conduct health fairs and instruct courses in nursing education. ",
+    "themes": [
+      "Healthcare Workforce"
+    ],
+    "partner": "Health Education and Action League for Haiti , State University of Haiti  ",
+    "country": "Haiti",
+    "city": "Pignion",
+    "lat": 19.5089,
+    "lng": -72.1163,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 19,
+    "faculty": "Sandy Cayo",
+    "role": "Assistant Professor, Director of GEPN Excellence Yale School of Nursing \nDirector of Clinical Initiatives SASH Lab Yale School of Public Health",
+    "initials": "SC",
+    "profile": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/ysn_sandy-cayo_web.jpg?itok=lqU1zPFE&c=f038212933c8d3ae446acabc1ec1e03a",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/ysn_sandy-cayo_web.jpg?itok=lqU1zPFE&c=f038212933c8d3ae446acabc1ec1e03a",
+    "activityType": "Education",
+    "activityName": "Nursing Education Instruction ",
+    "description": "Dr. Sandy Cayo is a board-certified family nurse practitioner. As a practicing clinician, she cares for patients across the care continuum from pediatric to geriatric specializing in primary care and urgent care services. Her other specialties include oncology, school-based health, and women’s health. Dr Cayo is an advocate for global health and travels to Haiti and Nigeria annually to conduct health fairs and instruct courses in nursing education. ",
+    "themes": [
+      "Healthcare Workforce"
+    ],
+    "partner": "Nigerian Healthcare Foundation ",
+    "country": "Nigeria",
+    "city": "Oweri",
+    "lat": 5.485,
+    "lng": 7.035,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 20,
+    "faculty": "Sandy Cayo",
+    "role": "Assistant Professor, Director of GEPN Excellence Yale School of Nursing \nDirector of Clinical Initiatives SASH Lab Yale School of Public Health",
+    "initials": "SC",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/sandy-cayo-dnp-fnp-bc-faan",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/ysn_sandy-cayo_web.jpg?itok=lqU1zPFE&c=f038212933c8d3ae446acabc1ec1e03a",
+    "activityType": "Education",
+    "activityName": "Global field immersion experience - Global Health Track",
+    "description": "Clinical immersion in Ghana with nursing students to treat hundreds of patients",
+    "themes": [
+      "Behavioral and Translational Research",
+      "Planetary Health"
+    ],
+    "partner": "",
+    "country": "Nigeria",
+    "city": "Oweri",
+    "lat": 5.485,
+    "lng": 7.035,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 21,
+    "faculty": "Zhao Ni",
+    "role": "Assistant Professor",
+    "initials": "ZN",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/zhao-ni-phd-bmed-rn-faan-faha",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/ysn622_0516_z_ni_0.jpg?itok=r-7wKGBm&c=fdbdd398305e23164eeaed266680e36f",
+    "activityType": "Research",
+    "activityName": "Using mHealth to promote HIV treatment in Indonesia",
+    "description": "This study aims to investigate the antiretroviral therapy (ART) adherence among people living with HIV in Indonesia and assess the feasibility of using mobile technologies to improve it.  Dr. Ni is an Assistant Professor, faculty lead of the Yale Office of Global Affairs & Planetary Health and serves as the Director of International Academic Partnerships and Programs.",
+    "themes": [
+      "AI and Digital Health"
+    ],
+    "partner": "University of Airlangga",
+    "country": "Indonesia",
+    "city": "Surabaya",
+    "lat": -7.2575,
+    "lng": 112.7521,
+    "startDate": "Jan 2023",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 22,
+    "faculty": "Zhao Ni",
+    "role": "Assistant Professor",
+    "initials": "ZN",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/zhao-ni-phd-bmed-rn-faan-faha",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/ysn622_0516_z_ni_0.jpg?itok=r-7wKGBm&c=fdbdd398305e23164eeaed266680e36f",
+    "activityType": "Research",
+    "activityName": "The Feasilibilty of using Augmented Reality Technology to Prevent HIV/AIDS Among Adolescent Girls and Young Women in Cameroon",
+    "description": "The primary objective of this study is to develop and test an augmented reality (AR) app to increase HIV testing and the awareness of PrEP among adolescent girls and young women in Cameroon. Dr. Ni is an Assistant Professor, faculty lead of the Yale Office of Global Affairs & Planetary Health and serves as the Director of International Academic Partnerships and Programs.",
+    "themes": [
+      "AI and Digital Health"
+    ],
+    "partner": "University of Dschang",
+    "country": "Cameroon",
+    "city": "Yaoundé",
+    "lat": 3.848,
+    "lng": 11.5021,
+    "startDate": "Jan 2022",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 23,
+    "faculty": "Zhao Ni",
+    "role": "Assistant Professor",
+    "initials": "ZN",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/zhao-ni-phd-bmed-rn-faan-faha",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/ysn622_0516_z_ni_0.jpg?itok=r-7wKGBm&c=fdbdd398305e23164eeaed266680e36f",
+    "activityType": "Research",
+    "activityName": "Using virtual reality to promote primary healthcare in Indonesia",
+    "description": "This study explores the awareness and acceptance of virtual reality (VR) and chatbot technologies among people at high risk for hypertension in Indonesia. Dr. Ni is an Assistant Professor at YSN, faculty lead of the Yale Office of Global Affairs & Planetary Health and serves as the Director of International Academic Partnerships and Programs.",
+    "themes": [
+      "AI and Digital Health"
+    ],
+    "partner": "University of Airlangga",
+    "country": "Indonesia",
+    "city": "Surabaya",
+    "lat": -7.2575,
+    "lng": 112.7521,
+    "startDate": "Jan 2022",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 24,
+    "faculty": "Zhao Ni",
+    "role": "Assistant Professor",
+    "initials": "ZN",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/zhao-ni-phd-bmed-rn-faan-faha",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/ysn622_0516_z_ni_0.jpg?itok=r-7wKGBm&c=fdbdd398305e23164eeaed266680e36f",
+    "activityType": "Research",
+    "activityName": "Developing an artificial intelligence-based mHealth intervention to increase HIV testing in Malaysia",
+    "description": "This study aims to develop, test, and implement an AI chatbot in Malaysia to improve HIV testing and pre-exposure prophylaxis (PrEP) among populations at high risk for HIV/AIDS. Dr. Ni is an Assistant Professor at YSN, faculty lead of the Yale Office of Global Affairs & Planetary Health and serves as the Director of International Academic Partnerships and Programs.",
+    "themes": [
+      "AI and Digital Health"
+    ],
+    "partner": "University of Malaya",
+    "country": "Malaysia",
+    "city": "Kuala Lumpur",
+    "lat": 3.139,
+    "lng": 101.6869,
+    "startDate": "Jan 2022",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 25,
+    "faculty": "Zhao Ni",
+    "role": "Assistant Professor",
+    "initials": "ZN",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/zhao-ni-phd-bmed-rn-faan-faha",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/ysn622_0516_z_ni_0.jpg?itok=r-7wKGBm&c=fdbdd398305e23164eeaed266680e36f",
+    "activityType": "Research",
+    "activityName": "Optimizing blood pressure digital health program in rural Nepal",
+    "description": "This research aims to study the barriers to the implementation of mHealth interventions for screening, preventing, and managing hypertension in Nepal. It consists of three sub-studies. Dr. Ni is an Assistant Professor at YSN, faculty lead of the Yale Office of Global Affairs & Planetary Health and serves as the Director of International Academic Partnerships and Programs.",
+    "themes": [
+      "AI and Digital Health"
+    ],
+    "partner": "Tribhuvan University & Medic Mobile Nepal",
+    "country": "Nepal",
+    "city": "Katmandu",
+    "lat": 27.7172,
+    "lng": 85.324,
+    "startDate": "Jan 2022",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 26,
+    "faculty": "Zhao Ni",
+    "role": "Assistant Professor",
+    "initials": "ZN",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/zhao-ni-phd-bmed-rn-faan-faha",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/ysn622_0516_z_ni_0.jpg?itok=r-7wKGBm&c=fdbdd398305e23164eeaed266680e36f",
+    "activityType": "Research",
+    "activityName": "Awareness of cardiovascular diseases (ACARD) study",
+    "description": "This study aims to investigate the awareness of cardiovascular symptoms and prevention measures among patients with cardiovascular disease. Dr. Ni is an Assistant Professor at YSN, faculty lead of the Yale Office of Global Affairs & Planetary Health and serves as the Director of International Academic Partnerships and Programs. ",
+    "themes": [
+      "Chronic Illness and Symptom Management"
+    ],
+    "partner": "Shanghai Jiao Tong University ",
+    "country": "China",
+    "city": "Shanghai",
+    "lat": 31.2304,
+    "lng": 121.4737,
+    "startDate": "Jan 2023",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 27,
+    "faculty": "Zhao Ni",
+    "role": "Assistant Professor",
+    "initials": "ZN",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/zhao-ni-phd-bmed-rn-faan-faha",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/ysn622_0516_z_ni_0.jpg?itok=r-7wKGBm&c=fdbdd398305e23164eeaed266680e36f",
+    "activityType": "Research",
+    "activityName": "Exploring the feasibility of using digital health interventions to prevent HIV/AIDS among college students",
+    "description": "In this project, an interdisciplinary research team examines the knowledge, attitudes, and perceptions toward HIV/AIDS and explores the feasibility of using digital health interventions to prevent HIV/AIDS among college students in the Philippines. Dr. Ni is an Assistant Professor at YSN, faculty lead of the Yale Office of Global Affairs & Planetary Health and serves as the Director of International Academic Partnerships and Programs. ",
+    "themes": [
+      "AI and Digital Health",
+      "Chronic Illness and Symptom Management"
+    ],
+    "partner": "Ateneo de Davao University",
+    "country": "Philippines",
+    "city": "Davao City",
+    "lat": 7.1907,
+    "lng": 125.4553,
+    "startDate": "Jan 2023",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 28,
+    "faculty": "LaRon Nelson",
+    "role": "Independence Foundation Professor of Nursing ",
+    "initials": "LN",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/laron-e-nelson-phd-rn-fnp-fnap-fnyam-faan",
+    "headshot": "https://jackson.yale.edu/wp-content/uploads/2026/01/LaRon-Nelson-1768451465.jpg",
+    "activityType": "Research",
+    "activityName": "Multi-Level Intervention Addressing Intersectional Stigma to Improve HIV Testing in MSM",
+    "description": "Prof. Nelson's Promoting Reductions in Intersectional StigMa (PRISM) study combined three theory-based interventions that were previously implemented separately in Ghana for reducing stigma at HCF-level, increasing HIV testing at the peer group-level, and increasing peer social support at the individual-level. The specific aims were to\n1. evaluate the feasibility and acceptability of a novel multi-component, multi-level intervention to address intersectional stigma. \n2. estimate effect size of the intervention for scale up to a definitive efficacy trial. \nDr. LaRon Nelson is the Independence Foundation Professor of Nursing and Associate Dean of Global Affairs and Planetary Health.",
+    "themes": [
+      "Behavioral and Translational Research",
+      "Chronic Illness and Symptom Management"
+    ],
+    "partner": "Priorities On Rights and Sexual Health (PORSH) and Youth Alliance for Health and Human Rights (YAHR) and Educational Assessment Research Center (EARC)",
+    "country": "Ghana",
+    "city": "Accra",
+    "lat": 5.6037,
+    "lng": -0.187,
+    "startDate": "Oct 2020",
+    "endDate": "Dec 2022",
+    "status": "Active"
+  },
+  {
+    "id": 29,
+    "faculty": "Christine Rodriguez",
+    "role": "Assistant Professor and Associate Dean of Nursing Impact",
+    "initials": "CR",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/christine-rodriguez-dnp-aprn-fnp-bc-mdiv-ma-fnyam-faan",
+    "headshot": "https://news.yale.edu/sites/default/files/styles/square_topper_image/public/ynews-christine-rodriguez-cc.jpg?h=d53bd2aa&itok=iFYLTnYb",
+    "activityType": "Education",
+    "activityName": "Training in simulation",
+    "description": "Dr. Telfer, Dr. Rodriguez and Linda collaborate with health professionals across Uganda and East Africa to provide training in simulation. Their capacity building activities include the goals, design and execution of simulation activities. ",
+    "themes": [
+      "Healthcare Workforce"
+    ],
+    "partner": "Makerere University Department of Health Sciences Midwifery",
+    "country": "Uganda",
+    "city": "Kampala",
+    "lat": 0.3476,
+    "lng": 32.5825,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 30,
+    "faculty": "Monica Ordway",
+    "role": "Associate Professor of Nursing",
+    "initials": "MO",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/monica-roosa-ordway-phd-aprn-ppcnp-bc-faan",
+    "headshot": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/f21fc275-edf3-43ea-83dc-a051dacdb2df",
+    "activityType": "Research",
+    "activityName": "Sleep Well, Bee Well (SWBW) Intervention; Fogarty K01 study (PI: Sania, Ayesha, MD, MPH)",
+    "description": "Dr. Ordway sleep intervention, Sleep Well, Bee Well (SWBW) will be adapted/tested in Bangladesh childcare centers as part of an NIH-funded Fogarty K01 training award for which Dr. Ordway is a mentor. The intervention tests the feasibility and acceptability of a personalized, multilevel sleep health promotion. Dr. Ordway is an Associate Professor at Yale School of Nursing. ",
+    "themes": [
+      "Maternal and Child Health"
+    ],
+    "partner": "Columbia U, NYC",
+    "country": "Bangladesh",
+    "city": "Dhaka",
+    "lat": 23.8103,
+    "lng": 90.4125,
+    "startDate": "Sep 2023",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 31,
+    "faculty": "Jennifer McIntosh",
+    "role": "Director of Clinical Education for the Graduate Entry Prespecialty in Nursing (GEPN) Program",
+    "initials": "JM",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/jennifer-mcintosh-phd-aprn-pmhnp-bc-cne-nea-bc",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/mcintosh_jennifer_-_headshot_6.22.jpg?itok=yWoFQEcp&c=15ea829fe70990fe5c102a827e095471",
+    "activityType": "Research",
+    "activityName": "Exploring mental health stigma and treatment-seeking attitudes and intentions among emergency nurses in China",
+    "description": "Funded by the Li Foundation Faculty Grant Program for Social & Behavioral Science Research in China, this project aims to 1) investigate mental health stigma among emergency nurses in China and 2) investigate the feasibility and acceptability of ART as a treatment intervention among emergency nurses living with symptoms of PTSD",
+    "themes": [
+      "Healthcare Workforce"
+    ],
+    "partner": "Central South University",
+    "country": "China",
+    "city": "Changsha",
+    "lat": 28.2278,
+    "lng": 112.9389,
+    "startDate": "Jan 2024",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 32,
+    "faculty": "David Vlahov",
+    "role": "Professor",
+    "initials": "DV",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/david-vlahov-phd-rn-faan",
+    "headshot": "https://ysm-res.cloudinary.com/image/upload/c_fill,f_auto,q_auto:eco,dpr_3,w_650/v1/yms/prod/73c28969-7aea-4276-9965-bfdcc9bc842f",
+    "activityType": "Capacity Building",
+    "activityName": "Developing  programs in urban health",
+    "description": "Dr. Vlahov was the founding President of the International Society for Urban Health (www.isuh.org ), hosting International Conferences.  He has been a Visiting Professor at the , Brazil to develop their programs in urban health",
+    "themes": [
+      "Planetary Health"
+    ],
+    "partner": "Medical School in Belo Horizonte",
+    "country": "Brazil",
+    "city": "Belo Horizonte",
+    "lat": -19.9167,
+    "lng": -43.9345,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 33,
+    "faculty": "David Vlahov",
+    "role": "Professor",
+    "initials": "DV",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/david-vlahov-phd-rn-faan",
+    "headshot": "https://ysm-res.cloudinary.com/image/upload/c_fill,f_auto,q_auto:eco,dpr_3,w_650/v1/yms/prod/73c28969-7aea-4276-9965-bfdcc9bc842f",
+    "activityType": "Capacity Building",
+    "activityName": "Expert consultant to the WHO",
+    "description": "Dr. Vlahov  served an expert consultant to the WHO’s Urban Health Center in Kobe, Japan.",
+    "themes": [
+      "Planetary Health"
+    ],
+    "partner": "WHO’s Urban Health Center in Kobe",
+    "country": "Japan",
+    "city": "Kobe",
+    "lat": 34.6901,
+    "lng": 135.1955,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 34,
+    "faculty": "LaRon Nelson",
+    "role": "Independence Foundation Professor of Nursing ",
+    "initials": "LN",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/laron-e-nelson-phd-rn-fnp-fnap-fnyam-faan",
+    "headshot": "https://jackson.yale.edu/wp-content/uploads/2026/01/LaRon-Nelson-1768451465.jpg",
+    "activityType": "Research",
+    "activityName": "Reduction of racial disparities in HIV incidence, treatment and viral suppression among African, Caribbean, and Black communities in Canada",
+    "description": "Prof. LaRon Nelson is an affiliate scientist with MAP Centre for Urban Health Solutions in the Li Ka Shing Knowledge Institute at St. Michael’s Hospital in Toronto. Prof. Nelson is leading Canadian Institute of Health Research sponsored trial testing the efficacy of client-centered care coordination as a strategy to enhance pre-exposure prophylaxis uptake and adherence in Black communities in Canada. Dr. LaRon Nelson is the Independence Foundation Professor of Nursing and Associate Dean of Global Affairs and Planetary Health. ",
+    "themes": [
+      "Chronic Illness and Symptom Management",
+      "Behavioral and Translational Research"
+    ],
+    "partner": " Li Ka Shing Knowledge Institute at St. Michael’s Hospital",
+    "country": "Canada",
+    "city": "Toronto",
+    "lat": 43.6532,
+    "lng": -79.3832,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 35,
+    "faculty": "LaRon Nelson",
+    "role": "Independence Foundation Professor of Nursing ",
+    "initials": "LN",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/laron-e-nelson-phd-rn-fnp-fnap-fnyam-faan",
+    "headshot": "https://jackson.yale.edu/wp-content/uploads/2026/01/LaRon-Nelson-1768451465.jpg",
+    "activityType": "Research",
+    "activityName": "Improving HIV-related outcomes among adolescents in Cameroon, Congo, Ghana and Nigeria",
+    "description": "Prof. LaRon Nelson's work in research and implementation science spans multiple countries. He co-founded the Central and West Africa Implementation Science Alliance (CAWISA)—a collaboration of implementation scientists and implementing agencies from Cameroon, Congo, Ghana, Nigeria and Democratic Republic of the Congo aimed to improve HIV related outcomes among adolescents in the region. Dr. LaRon Nelson is the Independence Foundation Professor of Nursing and Associate Dean of Global Affairs and Planetary Health.",
+    "themes": [
+      "Behavioral and Translational Research",
+      "Chronic Illness and Symptom Management"
+    ],
+    "partner": "Central and West Africa Implementation Science Alliance (CAWISA)",
+    "country": "Cameroon",
+    "city": "Yaoundé",
+    "lat": 3.848,
+    "lng": 11.5021,
+    "startDate": "Jan 2019",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 36,
+    "faculty": "LaRon Nelson",
+    "role": "Professor of Nursing ",
+    "initials": "LN",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/laron-e-nelson-phd-rn-fnp-fnap-fnyam-faan",
+    "headshot": "https://jackson.yale.edu/wp-content/uploads/2026/01/LaRon-Nelson-1768451465.jpg",
+    "activityType": "Research",
+    "activityName": "Improving HIV-related outcomes among adolescents in Cameroon, Congo, Ghana and Nigeria",
+    "description": "Prof. LaRon Nelson's work in research and implementation science spans multiple countries. He co-founded the Central and West Africa Implementation Science Alliance (CAWISA)—a collaboration of implementation scientists and implementing agencies from Cameroon, Congo, Ghana, Nigeria and Democratic Republic of the Congo aimed to improve HIV related outcomes among adolescents in the region. Dr. LaRon Nelson is the Independence Foundation Professor of Nursing and Associate Dean of Global Affairs and Planetary Health.",
+    "themes": [
+      "Behavioral and Translational Research",
+      "Chronic Illness and Symptom Management"
+    ],
+    "partner": "Central and West Africa Implementation Science Alliance (CAWISA)",
+    "country": "Democratic Republic of the Congo",
+    "city": "Kinshasa",
+    "lat": -4.4419,
+    "lng": 15.2663,
+    "startDate": "Feb 2019",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 37,
+    "faculty": "LaRon Nelson",
+    "role": "Professor of Nursing ",
+    "initials": "LN",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/laron-e-nelson-phd-rn-fnp-fnap-fnyam-faan",
+    "headshot": "https://jackson.yale.edu/wp-content/uploads/2026/01/LaRon-Nelson-1768451465.jpg",
+    "activityType": "Research",
+    "activityName": "Improving HIV-related outcomes among adolescents in Cameroon, Congo, Ghana and Nigeria",
+    "description": "Prof. LaRon Nelson's work in research and implementation science spans multiple countries. He co-founded the Central and West Africa Implementation Science Alliance (CAWISA)—a collaboration of implementation scientists and implementing agencies from Cameroon, Congo, Ghana, Nigeria and Democratic Republic of the Congo aimed to improve HIV related outcomes among adolescents in the region. Dr. LaRon Nelson is the Independence Foundation Professor of Nursing and Associate Dean of Global Affairs and Planetary Health.",
+    "themes": [
+      "Behavioral and Translational Research",
+      "Chronic Illness and Symptom Management"
+    ],
+    "partner": "Central and West Africa Implementation Science Alliance (CAWISA)",
+    "country": "Ghana",
+    "city": "Accra",
+    "lat": 5.6037,
+    "lng": -0.187,
+    "startDate": "Jan 2019",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 38,
+    "faculty": "LaRon Nelson",
+    "role": "Professor of Nursing ",
+    "initials": "LN",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/laron-e-nelson-phd-rn-fnp-fnap-fnyam-faan",
+    "headshot": "https://jackson.yale.edu/wp-content/uploads/2026/01/LaRon-Nelson-1768451465.jpg",
+    "activityType": "Research",
+    "activityName": "Improving HIV-related outcomes among adolescents in Cameroon, Congo, Ghana and Nigeria",
+    "description": "Prof. LaRon Nelson's work in research and implementation science spans multiple countries. He co-founded the Central and West Africa Implementation Science Alliance (CAWISA)—a collaboration of implementation scientists and implementing agencies from Cameroon, Congo, Ghana, Nigeria and Democratic Republic of the Congo aimed to improve HIV related outcomes among adolescents in the region. Dr. LaRon Nelson is the Independence Foundation Professor of Nursing and Associate Dean of Global Affairs and Planetary Health.",
+    "themes": [
+      "Behavioral and Translational Research",
+      "Chronic Illness and Symptom Management"
+    ],
+    "partner": "Central and West Africa Implementation Science Alliance (CAWISA)",
+    "country": "Nigeria",
+    "city": "Abuja",
+    "lat": 9.0765,
+    "lng": 7.3986,
+    "startDate": "Jan 2019",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 39,
+    "faculty": "Lindsay Powell",
+    "role": "Lecturer in and Assistant Clinical Professor of Nursing",
+    "initials": "LP",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/lindsay-powell-dnp",
+    "headshot": null,
+    "activityType": "Education",
+    "activityName": "SAVANA program",
+    "description": "Dr. Lindsay Powell spear headed the School of Nursing’s study abroad initiative in South Africa through the SAVANA (Southern Africa Virginia Networks and Associations) program. ",
+    "themes": [
+      "Healthcare Workforce"
+    ],
+    "partner": "University of Virginia School of Nursing",
+    "country": "South Africa",
+    "city": "Cape Town",
+    "lat": -25.7479,
+    "lng": 28.2293,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 40,
+    "faculty": "Meghan McClain Garcia",
+    "role": "Family Nurse Practitioner and board certified HIV specialist",
+    "initials": "MG",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/meghan-mcclain-garcia-aprn-fnp-c",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/garcia_meghan_headshot_2022_21.jpg?itok=NappOSH-&c=f7c923652a20bfb14473a3e000942c85",
+    "activityType": "Capacity Building",
+    "activityName": "Community health worker program ",
+    "description": "Meghan McClain Garcia’s dedication to global health is evident through her longstanding service as a board member of GRACE Cares, Inc., an international nonprofit organization. Among her most significant accomplishments is the establishment of a community health worker program in the Dominican Republic, which has empowered women community leaders through training for over a decade, fostering sustainable health improvements in underserved areas. Her efforts exemplify a deep passion for education, equity, and the empowerment of communities.",
+    "themes": [
+      "Healthcare Workforce"
+    ],
+    "partner": "",
+    "country": "Dominican Republic",
+    "city": "La Romana",
+    "lat": 18.4273,
+    "lng": -68.9728,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 41,
+    "faculty": "Michelle Kennedy",
+    "role": "Family Nurse Practitioner\nNational Health Service Corps Scholar",
+    "initials": "MK",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/michelle-kennedy-msn-aprn-fnp-bc",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/mkennedy-headshot.jpg?itok=zFATL2Bx&c=f86c0318a418f8aada8d6a98555dfb64",
+    "activityType": "Capacity Building",
+    "activityName": "Mercy Ships",
+    "description": "Michelle Kennedy’s global contributions include her service with Mercy Ships in New Zealand and the Pacific Islands, where she worked to understand and address the healthcare needs of underserved populations. These experiences highlight her dedication to community health and equitable access to care, underscoring her commitment to providing compassionate, patient-centered healthcare in diverse settings.",
+    "themes": [
+      "Healthcare Workforce",
+      "Behavioral and Translational Research"
+    ],
+    "partner": "",
+    "country": "New Zealand",
+    "city": "Auckland",
+    "lat": -36.8485,
+    "lng": 174.7633,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 42,
+    "faculty": "Joanne DeSanto Iennaco",
+    "role": "Professor of Nursing\nDirector, Clinical DNP Program\n\n",
+    "initials": "JI",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/joanne-desanto-iennaco-phd-aprn-pmhnp-bc-faan-ffnmrcsi",
+    "headshot": "https://ysm-res.cloudinary.com/image/upload/c_fill,f_auto,q_auto:eco,dpr_3,w_650/v1/yms/prod/e71235ca-2639-4f9d-bbdf-8bb60590288f",
+    "activityType": "Research",
+    "activityName": "PERoPA-Study",
+    "description": "Dr. Joanne Iennaco’s international contributions are highlighted through her leadership in the PERoPA-Study, a global research project examining the perceptions of aggression exposure in healthcare organizations across multiple countries, including Australia, Canada, Germany, Sweden, Switzerland, the United Kingdom, and the United States. This international collaboration addresses workplace violence in healthcare settings, with implications for improving healthcare worker safety and mental health globally. Her engagement with global organizations such as the European Violence in Psychiatry Research Group (EviPRG) and the International Research Collaboration in Clinical Aggression (IRCCA) further demonstrates her international impact.",
+    "themes": [
+      "Healthcare Workforce"
+    ],
+    "partner": "European Violence in Psychiatry Research Group (EviPRG)",
+    "country": "Multiple European Countries",
+    "city": "Europe",
+    "lat": 54.526,
+    "lng": 15.2551,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 43,
+    "faculty": "Ophelia Empleo-Frazier",
+    "role": "Lecturer in Nursing, Adult/Gerontology Primary Care Nurse Practitioner",
+    "initials": "OE",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/ophelia-empleo-frazier-msn-gnp-bc-cdp",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/ophelia_empleo-frazier.jpg?itok=bZj3oNFU&c=4a288712dd128774a07fbd6c6f932193",
+    "activityType": "Capacity Building",
+    "activityName": "PNAAF",
+    "description": "Ophelia Empleo-Frazier has extensive experience in geriatric care and global healthcare involvement, particularly with her leadership in the Philippine Nurses Association of America (PNAA). The 6th PNAAF International Collaborative Education Conference she’s involved with focuses on innovations in nursing, with an emphasis on global linkages, which could be of interest to international healthcare networks.",
+    "themes": [
+      "Healthcare Workforce"
+    ],
+    "partner": "Philippine Nurses Association",
+    "country": "Philippines",
+    "city": "Manila",
+    "lat": 14.5995,
+    "lng": 120.9842,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 44,
+    "faculty": "Azita Emami ",
+    "role": "Linda Koch Lorimer Professor of Nursing\nDean, Yale School of Nursing\n",
+    "initials": "AE",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/azita-emami-phd-rn-faan",
+    "headshot": "https://nursing.yale.edu/sites/default/files/azita_emami_0.jpg",
+    "activityType": "Capacity Building",
+    "activityName": "Collaborative exchange program",
+    "description": "Dr. Emami has fostered collaborative exchanges with nursing programs in countries such as Thailand, emphasizing the importance of understanding social determinants of health on global outcomes. She is also an advocate for diversity and inclusion in nursing education, having initiated the Center for Antiracism in Nursing.",
+    "themes": [
+      "Behavioral and Translational Research"
+    ],
+    "partner": "Dr. Emami has fostered collaborative exchanges with nursing programs in countries such as Thailand and China, emphasizing the importance of understanding social determinants of health on global outcomes. She is also an advocate for diversity and inclusion in nursing education, having initiated the Center for Antiracism in Nursing.",
+    "country": "Thailand",
+    "city": "Bangko",
+    "lat": 13.7563,
+    "lng": 100.5018,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 45,
+    "faculty": "Azita Emami ",
+    "role": "Linda Koch Lorimer Professor of Nursing\nDean, Yale School of Nursing",
+    "initials": "AE",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/azita-emami-phd-rn-faan",
+    "headshot": "https://nursing.yale.edu/sites/default/files/azita_emami_0.jpg",
+    "activityType": "Capacity Building",
+    "activityName": "Collaborative exchange program",
+    "description": "Dr. Emami has fostered collaborative exchanges with nursing programs in countries such as China, emphasizing the importance of understanding social determinants of health on global outcomes. She is also an advocate for diversity and inclusion in nursing education, having initiated the Center for Antiracism in Nursing.",
+    "themes": [
+      "Behavioral and Translational Research"
+    ],
+    "partner": "Peking University",
+    "country": "China",
+    "city": "Beijing",
+    "lat": 39.9928,
+    "lng": 116.3055,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 46,
+    "faculty": "Christine M. Berté",
+    "role": "Lecturer",
+    "initials": "CB",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/christine-m-berte-edd-aprn-fnp-bc-cne",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/cmb_head_shot.jpg?itok=IkiRmNR1&c=c5a69ac9d6706cdbdacb1b6540ad838e",
+    "activityType": "Education",
+    "activityName": "Curriculum Development ",
+    "description": "Dr. Christine M. Berté has international teaching experience, having developed and taught nursing courses in **London**, **Dublin**, and various cities in **Italy**. Her academic work has focused on global nursing education and curriculum development, contributing to nursing practice and education in multiple international settings.",
+    "themes": [
+      "Healthcare Workforce",
+      "Behavioral and Translational Research"
+    ],
+    "partner": "",
+    "country": "Ireland",
+    "city": "Dublin",
+    "lat": 53.3498,
+    "lng": -6.2603,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 47,
+    "faculty": "Bridget Basile",
+    "role": "Assistant Professor in Nursing",
+    "initials": "BB",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/bridget-basile-phd-ma-rn-fnp-bc",
+    "headshot": "https://news.yale.edu/sites/default/files/styles/square_topper_image/public/ynews-basile-ibrahim-24_r5a_3640-cc.jpg?h=7e5709a1&itok=x0N6GMN4",
+    "activityType": "Capacity Building",
+    "activityName": "International development projects",
+    "description": "Dr. Bridget Basile has international experience working on development projects funded by agencies such as the World Bank and USAID. She brings her expertise from anthropology and international development into her nursing research, particularly focusing on improving maternal health outcomes for marginalized populations. Her work has a global health equity focus, specifically aimed at addressing disparities in perinatal care for women affected by socio-economic and geographical challenges.Dr. Bridget Basile's international work has included experience in Canada and various countries involved in development projects funded by the World Bank and USAID.",
+    "themes": [
+      "Behavioral and Translational Research",
+      "Maternal and Child Health"
+    ],
+    "partner": "University of British Columbia",
+    "country": "Canada",
+    "city": "Vancouver",
+    "lat": 49.2827,
+    "lng": -123.1207,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 48,
+    "faculty": "Tracy Rabin",
+    "role": "Associate Professor of Medicine (General Medicine) and Clinical Professor of Nursing",
+    "initials": "TR",
+    "profile": "https://medicine.yale.edu/profile/tracy-rabin/",
+    "headshot": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/4c7e6acb-7473-4b44-b6e0-ffba1f70b44d",
+    "activityType": "Research",
+    "activityName": "Global Health Equity Scholars: Integrated Management of NCD",
+    "description": "The Makerere University-Yale University (MUYU) collaboration focuses on improving patient care by training faculty  to treat non-communicable diseases, such as diabetes and kidney disease. Post-docs and advanced PhD and professional school students can participate in one-year research training fellowhsip opportunities in global health at NIH-funded centers aborad. ",
+    "themes": [
+      "Chronic Illness and Symptom Management",
+      "Healthcare Workforce"
+    ],
+    "partner": "Makerere University",
+    "country": "Uganda",
+    "city": "Kampala",
+    "lat": 0.3476,
+    "lng": 32.5825,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 49,
+    "faculty": "Robin Whittemore",
+    "role": "Professor of Nursing",
+    "initials": "RW",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/robin-whittemore-phd-aprn-faan",
+    "headshot": "https://nursing.yale.edu/sites/default/files/resize/images/Whittemore-200x300.jpg",
+    "activityType": "Research",
+    "activityName": "YO PUEDO! DIABETES SELF-MANAGEMENT EDUCATION + MHEALTH IN MEXICO CITY",
+    "description": "The first aim of the study is to translate an evidence-based DSME program (Yo Puedo!) to the cultural norms, expertise of providers, and systems of care in Seguro Popular clinics in Mexico (provide care to adults with low socioeconomic status). The second aim of the study is to evaluate the feasibility (process of implementation, fidelity of sessions, attendance, attrition), acceptability (interviews with providers and participants) and preliminary efficacy of Yo Puedo + mHealth in adults with T2D in Mexico City.",
+    "themes": [
+      "AI and Digital Health",
+      "Chronic Illness and Symptom Management"
+    ],
+    "partner": "Seguro Popular",
+    "country": "Mexico",
+    "city": "Mexico City",
+    "lat": 19.4326,
+    "lng": -99.1332,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 50,
+    "faculty": "Holly Kennedy",
+    "role": "Helen Varney Professor of Midwifery",
+    "initials": "HK",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/holly-powell-kennedy-phd-cnm-facnm-faan",
+    "headshot": "https://ysm-res.cloudinary.com/image/upload/c_fill,f_auto,q_auto:eco,dpr_3,w_650/v1/yms/prod/57635546-7b3b-4a49-aef2-ae8caefe9e8e",
+    "activityType": "Research",
+    "activityName": "Nurse-Midwifery Practice",
+    "description": "Understand the links between \"how\" care is provided during pregnancy and birth with clinical and social outcomes.",
+    "themes": [
+      "Maternal and Child Health"
+    ],
+    "partner": "",
+    "country": "Switzerland",
+    "city": "Zurich",
+    "lat": 47.3769,
+    "lng": 8.5417,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 51,
+    "faculty": "Michelle Telfer",
+    "role": "Associate Professor of Nursing\nand Interim Nurse-Midwifery Specialty Co-Director",
+    "initials": "MT",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/michelle-telfer-dnp-mph-cnm-facnm",
+    "headshot": "https://ysm-res.cloudinary.com/image/upload/c_fill,f_auto,q_auto:eco,dpr_3,w_650/v1/yms/prod/699d53eb-c231-49e6-bf3f-cd5617cb2bd7",
+    "activityType": "Education",
+    "activityName": "Clinical Rotation Expansion",
+    "description": "Allows School of Nursing faculty member to be based in Kampala and 2-3 YSN students go to do research and a six-week clinical rotation",
+    "themes": [
+      "Behavioral and Translational Research",
+      "Healthcare Workforce"
+    ],
+    "partner": "",
+    "country": "Uganda",
+    "city": "Kampala",
+    "lat": 0.3476,
+    "lng": 32.5825,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 52,
+    "faculty": "Lois S. Sadler",
+    "role": "Professor, YSN and Yale Child Study Center \n\n",
+    "initials": "LS",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/lois-s-sadler-phd-rn-faan",
+    "headshot": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/78a2e817-6c8e-43ae-adb0-2f4bede593b2",
+    "activityType": "Capacity Building",
+    "activityName": "Minding the Baby",
+    "description": "Grounded in attachment theory and reflective parenting, Minding the BabyÂ® (MTB) home visiting provides an integrated model of care for first-time young mothers and their families that bridges primary care and mental health approaches to enhancing the mother-infant relationship. MTB implementation and evaluation in Denmark",
+    "themes": [
+      "Maternal and Child Health"
+    ],
+    "partner": "University of Sao Paulo School of Nursing",
+    "country": "Brazil",
+    "city": "São Paulo",
+    "lat": -23.5614,
+    "lng": -46.7308,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 53,
+    "faculty": "Lois S. Sadler",
+    "role": "Professor, YSN and Yale Child Study Center",
+    "initials": "LS",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/lois-s-sadler-phd-rn-faan",
+    "headshot": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/78a2e817-6c8e-43ae-adb0-2f4bede593b2",
+    "activityType": "Capacity Building",
+    "activityName": "Minding the Baby",
+    "description": "Grounded in attachment theory and reflective parenting, Minding the BabyÂ® (MTB) home visiting provides an integrated model of care for first-time young mothers and their families that bridges primary care and mental health approaches to enhancing the mother-infant relationship. MTB implementation and evaluation in England",
+    "themes": [
+      "Maternal and Child Health"
+    ],
+    "partner": "",
+    "country": "Scotland",
+    "city": "Glasgow",
+    "lat": 55.8642,
+    "lng": -4.2518,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 54,
+    "faculty": "Lois S. Sadler",
+    "role": "Professor, YSN and Yale Child Study Center",
+    "initials": "LS",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/lois-s-sadler-phd-rn-faan",
+    "headshot": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/78a2e817-6c8e-43ae-adb0-2f4bede593b2",
+    "activityType": "Capacity Building",
+    "activityName": "Minding the Baby",
+    "description": "Grounded in attachment theory and reflective parenting, Minding the BabyÂ® (MTB) home visiting provides an integrated model of care for first-time young mothers and their families that bridges primary care and mental health approaches to enhancing the mother-infant relationship. MTB implementation and evaluation in Scotland",
+    "themes": [
+      "Maternal and Child Health"
+    ],
+    "partner": "",
+    "country": "United Kingdom",
+    "city": "Sheffield",
+    "lat": 53.3811,
+    "lng": -1.4701,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 55,
+    "faculty": "Lois S. Sadler",
+    "role": "Professor, YSN and Yale Child Study Center ",
+    "initials": "LS",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/lois-s-sadler-phd-rn-faan",
+    "headshot": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/78a2e817-6c8e-43ae-adb0-2f4bede593b2",
+    "activityType": "Capacity Building",
+    "activityName": "Minding the Baby",
+    "description": "Grounded in attachment theory and reflective parenting, Minding the BabyÂ® (MTB) home visiting provides an integrated model of care for first-time young mothers and their families that bridges primary care and mental health approaches to enhancing the mother-infant relationship. MTB implementation and evaluation in Denmark",
+    "themes": [
+      "Maternal and Child Health"
+    ],
+    "partner": "",
+    "country": "Denmark",
+    "city": "Copenhagen",
+    "lat": 55.6761,
+    "lng": 12.5683,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 56,
+    "faculty": "Patricia Ryan-Krause",
+    "role": "Professor Emerita of Nursing",
+    "initials": "PR",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/patricia-ryan-krause-ms-msn-pcpnp-bc",
+    "headshot": "https://ysm-res.cloudinary.com/image/upload/c_fill,f_auto,q_auto:eco,dpr_3,w_650/v1/yms/prod/08c97643-55bc-4854-981c-b9e937288177",
+    "activityType": "Research",
+    "activityName": "Capacity Building Through Engagement and Education in a Rural Community",
+    "description": "YSN global health office supported project",
+    "themes": [
+      "Behavioral and Translational Research",
+      "Healthcare Workforce"
+    ],
+    "partner": "",
+    "country": "Nicaragua",
+    "city": "Managua",
+    "lat": 12.11499,
+    "lng": -86.23617,
+    "startDate": "",
+    "endDate": "",
+    "status": "Active"
+  },
+  {
+    "id": 57,
+    "faculty": "Miia Kivipelto",
+    "role": "Director of the Center for Aging Well",
+    "initials": "MK",
+    "profile": "https://nursing.yale.edu/faculty-research/faculty-directory/miia-kivipelto-md-phd",
+    "headshot": "https://nursing.yale.edu/sites/default/files/styles/people_detail/public/kivipelto_square_0.jpg?itok=7rkTbR0l&c=8ea42f780a4bac5c9b3de621e4591ac4",
+    "activityType": "FINGERS Study",
+    "activityName": "FINGERS",
+    "description": "The FINGER project is a landmark Finnish study that tests whether multiple lifestyle interventions can slow cognitive decline in older adults at risk for dementia. The trial combines physical activity, nutritional guidance, cognitive training and intensive management of vascular risk factors. Results showed that this multidomain approach helped preserve overall cognitive performance compared with standard health advice. The findings reshaped thinking in dementia prevention and inspired the World-Wide FINGERS network, which adapts and tests similar strategies in many countries to understand how lifestyle, vascular and genetic factors influence brain health. The World‑Wide FINGERS network now spans more than 70 countries worldwide, across all continents — from North America (eg. U.S. POINTER in the United States), Europe (many national adaptations), Asia (including trials such as MIND‑CHINA in China, SINGER in Singapore, and initiatives in Japan and South Korea), Latin America (LatAm-FINGERS, which includes Argentina, Brazil, Chile, Colombia and other countries), Africa (via Africa-FINGERS and its participating countries) and Oceania (for example AU-ARROW in Australia) among others.",
+    "themes": [
+      "Healthy Aging and Precision Wellness"
+    ],
+    "partner": "Finnish Institute for Health and Welfare (THL)",
+    "country": "Finland",
+    "city": "Helsinki",
+    "lat": 60.1699,
+    "lng": 24.9384,
+    "startDate": "Jan 2009",
+    "endDate": "",
+    "status": "Active"
+  }
+];
+
+  var TYPE_COLORS = {
+    "Research": "#00356b",
+    "Education": "#BD9B60",
+    "Capacity Building": "#5C8374",
+    "FINGERS Study": "#8B5A3C"
+  };
+
+  var TYPE_BADGE_CLASS = {
+    "Research": "ysn-badge-research",
+    "Education": "ysn-badge-education",
+    "Capacity Building": "ysn-badge-capacity",
+    "FINGERS Study": "ysn-badge-fingers"
+  };
+
+  function escapeHtml(s) {
+    if (s === null || s === undefined) return "";
+    return String(s)
+      .replace(new RegExp("&", "g"), "&amp;")
+      .replace(new RegExp("\u003C", "g"), "&lt;")
+      .replace(new RegExp("\u003E", "g"), "&gt;")
+      .replace(new RegExp("\"", "g"), "&quot;")
+      .replace(new RegExp("'", "g"), "&#39;");
+  }
+
+  function makePinIcon(type) {
+    var color = TYPE_COLORS[type] || "#4a4a4a";
+    var html = '\u003Cdiv class="ysn-pin" style="background:' + color + '"\u003E\u003Cdiv class="ysn-pin-inner"\u003E\u003C/div\u003E\u003C/div\u003E';
+    return L.divIcon({
+      html: html,
+      className: "ysn-pin-wrap",
+      iconSize: [28, 28],
+      iconAnchor: [14, 14],
+      popupAnchor: [0, -14]
+    });
+  }
+
+  function avatarHTML(rec) {
+    if (rec.headshot) {
+      var safeUrl = escapeHtml(rec.headshot);
+      var safeInit = escapeHtml(rec.initials);
+      return '\u003Cimg src="' + safeUrl + '" alt="" onerror="this.style.display=\'none\'; this.parentNode.innerHTML=\'' + safeInit + '\';"\u003E';
+    }
+    return escapeHtml(rec.initials);
+  }
+
+  function buildPopup(rec) {
+    var badgeClass = TYPE_BADGE_CLASS[rec.activityType] || "ysn-badge-research";
+    var statusClass = rec.status === "Active" ? "ysn-badge-active" : "ysn-badge-archived";
+
+    var dateStr = "";
+    if (rec.startDate && rec.endDate) dateStr = rec.startDate + " - " + rec.endDate;
+    else if (rec.startDate) dateStr = rec.startDate;
+    else if (rec.endDate) dateStr = rec.endDate;
+
+    var themesHtml = "";
+    if (rec.themes && rec.themes.length) {
+      themesHtml = '\u003Cdiv class="ysn-popup-themes"\u003E' +
+        rec.themes.map(function (t) {
+          return '\u003Cspan class="ysn-theme-chip"\u003E' + escapeHtml(t) + '\u003C/span\u003E';
+        }).join("") + '\u003C/div\u003E';
+    }
+
+    var profileLink = "";
+    if (rec.profile) {
+      profileLink = '\u003Ca href="' + escapeHtml(rec.profile) + '" target="_blank" rel="noopener" class="ysn-popup-link"\u003EView faculty profile\u003C/a\u003E';
+    }
+
+    var locationStr = [rec.city, rec.country].filter(Boolean).join(", ");
+
+    var partnerRow = rec.partner ?
+      '\u003Cdiv class="ysn-popup-meta-row"\u003E\u003Cspan class="ysn-popup-meta-label"\u003EPartner\u003C/span\u003E' + escapeHtml(rec.partner) + '\u003C/div\u003E' : '';
+    var locationRow = locationStr ?
+      '\u003Cdiv class="ysn-popup-meta-row"\u003E\u003Cspan class="ysn-popup-meta-label"\u003ELocation\u003C/span\u003E' + escapeHtml(locationStr) + '\u003C/div\u003E' : '';
+    var dateRow = dateStr ?
+      '\u003Cdiv class="ysn-popup-meta-row"\u003E\u003Cspan class="ysn-popup-meta-label"\u003EDates\u003C/span\u003E' + escapeHtml(dateStr) + '\u003C/div\u003E' : '';
+
+    var descHtml = rec.description ?
+      '\u003Cdiv class="ysn-popup-desc"\u003E' + escapeHtml(rec.description).replace(new RegExp("\\n", "g"), "\u003Cbr\u003E") + '\u003C/div\u003E' : '';
+
+    return '\u003Cdiv class="ysn-popup"\u003E' +
+      '\u003Cdiv class="ysn-popup-faculty"\u003E' +
+        '\u003Cdiv class="ysn-popup-avatar"\u003E' + avatarHTML(rec) + '\u003C/div\u003E' +
+        '\u003Cdiv class="ysn-popup-faculty-meta"\u003E' +
+          '\u003Cdiv class="ysn-popup-faculty-name"\u003E' + escapeHtml(rec.faculty) + '\u003C/div\u003E' +
+          '\u003Cdiv class="ysn-popup-faculty-role"\u003E' + escapeHtml(rec.role) + '\u003C/div\u003E' +
+        '\u003C/div\u003E' +
+      '\u003C/div\u003E' +
+      '\u003Cdiv class="ysn-popup-body"\u003E' +
+        '\u003Cdiv class="ysn-popup-title"\u003E' + escapeHtml(rec.activityName) + '\u003C/div\u003E' +
+        '\u003Cdiv class="ysn-popup-badges"\u003E' +
+          '\u003Cspan class="ysn-badge ' + badgeClass + '"\u003E' + escapeHtml(rec.activityType) + '\u003C/span\u003E' +
+          '\u003Cspan class="ysn-badge ' + statusClass + '"\u003E' + escapeHtml(rec.status) + '\u003C/span\u003E' +
+        '\u003C/div\u003E' +
+        themesHtml +
+        '\u003Cdiv class="ysn-popup-meta"\u003E' +
+          partnerRow + locationRow + dateRow +
+        '\u003C/div\u003E' +
+        descHtml +
+        profileLink +
+      '\u003C/div\u003E' +
+    '\u003C/div\u003E';
+  }
+
+  // Initialize map
+  var map = L.map("ysn-map", {
+    center: [20, 10],
+    zoom: 2,
+    minZoom: 2,
+    worldCopyJump: true,
+    zoomControl: true,
+    scrollWheelZoom: false
+  });
+
+  // Allow scroll-wheel zoom only when map has focus
+  map.on("focus", function () { map.scrollWheelZoom.enable(); });
+  map.on("blur", function () { map.scrollWheelZoom.disable(); });
+  map.getContainer().addEventListener("click", function () { map.scrollWheelZoom.enable(); });
+
+  // Carto Positron tiles - clean, neutral basemap
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+    attribution: "&copy; \u003Ca href=\"https://www.openstreetmap.org/copyright\"\u003EOpenStreetMap\u003C/a\u003E &copy; \u003Ca href=\"https://carto.com/attributions\"\u003ECARTO\u003C/a\u003E",
+    subdomains: "abcd",
+    maxZoom: 19
+  }).addTo(map);
+
+  var cluster = L.markerClusterGroup({
+    maxClusterRadius: 40,
+    spiderfyOnMaxZoom: true,
+    showCoverageOnHover: false,
+    iconCreateFunction: function (c) {
+      var count = c.getChildCount();
+      var size = count < 10 ? 36 : count < 30 ? 44 : 52;
+      return L.divIcon({
+        html: '\u003Cdiv\u003E\u003Cspan\u003E' + count + '\u003C/span\u003E\u003C/div\u003E',
+        className: "marker-cluster marker-cluster-" + (count < 10 ? "small" : count < 30 ? "medium" : "large"),
+        iconSize: L.point(size, size)
+      });
+    }
+  });
+  map.addLayer(cluster);
+
+  // Build markers
+  var allMarkers = [];
+  DATA.forEach(function (rec) {
+    var m = L.marker([rec.lat, rec.lng], { icon: makePinIcon(rec.activityType) });
+    m.bindPopup(buildPopup(rec), { maxWidth: 360, minWidth: 340 });
+    m._ysnRec = rec;
+    allMarkers.push(m);
+  });
+
+  // Filter state
+  var filters = {
+    type: new Set(),
+    status: new Set(),
+    country: new Set()
+  };
+
+  function updateMarkers() {
+    cluster.clearLayers();
+    var visible = allMarkers.filter(function (m) {
+      var r = m._ysnRec;
+      if (filters.type.size && !filters.type.has(r.activityType)) return false;
+      if (filters.status.size && !filters.status.has(r.status)) return false;
+      if (filters.country.size && !filters.country.has(r.country)) return false;
+      return true;
+    });
+    cluster.addLayers(visible);
+    document.getElementById("ysn-count-visible").textContent = visible.length;
+  }
+
+  // Build filter UI
+  function counts(field) {
+    var c = {};
+    DATA.forEach(function (r) {
+      var v = r[field] || "Unknown";
+      c[v] = (c[v] || 0) + 1;
+    });
+    return c;
+  }
+
+  function buildCheckboxes(containerId, field, values, filterKey) {
+    var container = document.getElementById(containerId);
+    var c = counts(field);
+    values.forEach(function (v) {
+      var row = document.createElement("label");
+      row.className = "ysn-check-row";
+      row.innerHTML =
+        '\u003Cinput type="checkbox" value="' + escapeHtml(v) + '"\u003E' +
+        '\u003Cspan\u003E' + escapeHtml(v) + '\u003C/span\u003E' +
+        '\u003Cspan class="ysn-check-count"\u003E' + (c[v] || 0) + '\u003C/span\u003E';
+      var cb = row.querySelector("input");
+      cb.addEventListener("change", function () {
+        if (cb.checked) filters[filterKey].add(v);
+        else filters[filterKey].delete(v);
+        updateMarkers();
+      });
+      container.appendChild(row);
+    });
+  }
+
+  var typeValues = Object.keys(counts("activityType")).sort();
+  var statusValues = Object.keys(counts("status")).sort();
+  var countryValues = Object.keys(counts("country")).filter(Boolean).sort();
+
+  buildCheckboxes("ysn-filter-type", "activityType", typeValues, "type");
+  buildCheckboxes("ysn-filter-status", "status", statusValues, "status");
+  buildCheckboxes("ysn-filter-country", "country", countryValues, "country");
+
+  // Country search filter
+  var countrySearch = document.getElementById("ysn-country-search");
+  countrySearch.addEventListener("input", function () {
+    var q = countrySearch.value.trim().toLowerCase();
+    var rows = document.querySelectorAll("#ysn-filter-country .ysn-check-row");
+    rows.forEach(function (row) {
+      var label = row.textContent.toLowerCase();
+      row.style.display = (!q || label.indexOf(q) >= 0) ? "" : "none";
+    });
+  });
+
+  // Reset button
+  document.getElementById("ysn-clear-btn").addEventListener("click", function () {
+    filters.type.clear();
+    filters.status.clear();
+    filters.country.clear();
+    document.querySelectorAll(".ysn-filters input[type=\"checkbox\"]").forEach(function (cb) {
+      cb.checked = false;
+    });
+    countrySearch.value = "";
+    document.querySelectorAll("#ysn-filter-country .ysn-check-row").forEach(function (row) {
+      row.style.display = "";
+    });
+    updateMarkers();
+  });
+
+  // Set totals
+  document.getElementById("ysn-count-total").textContent = DATA.length;
+  document.getElementById("ysn-count-visible").textContent = DATA.length;
+
+  // Initial render
+  updateMarkers();
+})();/*]]>*/</script></div></div></div></div></body></html>
