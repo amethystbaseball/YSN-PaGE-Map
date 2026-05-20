@@ -1,0 +1,61 @@
+.ysn-github-applet {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: YaleNew, Arial, sans-serif;
+}
+
+.ysn-card {
+  background: #ffffff;
+  border: 1px solid #d7d7d7;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.ysn-card h2 {
+  margin: 0 0 0.75rem 0;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.ysn-card p {
+  margin: 0 0 1.5rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.ysn-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.ysn-stat {
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 1rem;
+  background: #f8f8f8;
+}
+
+.ysn-stat strong {
+  display: block;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.ysn-stat span {
+  display: block;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 700px) {
+  .ysn-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ysn-github-applet {
+    padding: 1rem;
+  }
+}
